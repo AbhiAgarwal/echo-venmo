@@ -36,7 +36,7 @@ VenmoHelper.prototype.intentHandlers = {
         if (personName) {
             response.tellWithCard(personName, cardTitle, personName);
         } else {
-        response.ask("I'm sorry, I currently do not know " + personName + ". What else can I help with?", "What else can I help with?");
+            response.ask("I'm sorry, I currently do not know " + personName + ". What else can I help with?", "What else can I help with?");
         }
     },
     HelpIntent: function (intent, session, response) {
