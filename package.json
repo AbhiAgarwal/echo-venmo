@@ -1,0 +1,31 @@
+{
+  "name": "echo-venmo",
+  "version": "0.0.1",
+  "description": "Amazon Echo skill to charge/request money from people on Venmo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiAgarwal/echo-venmo.git"
+  },
+  "keywords": [
+    "Venmo",
+    "Echo",
+    "Amazon",
+    "Echo",
+    "Amazon",
+    "Echo",
+    "Venmo"
+  ],
+  "author": "Abhi Agarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbhiAgarwal/echo-venmo/issues"
+  },
+  "homepage": "https://github.com/AbhiAgarwal/echo-venmo#readme",
+  "dependencies": {
+    "venmo": "0.0.2"
+  }
+}

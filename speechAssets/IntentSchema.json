@@ -1,0 +1,21 @@
+{
+  "intents": [
+    {
+      "intent": "RequestMoneyIntent",
+      "slots": [
+        {
+          "name": "Person",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Amount",
+          "type": "NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
