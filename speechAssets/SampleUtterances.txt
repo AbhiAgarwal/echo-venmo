@@ -1,4 +1,8 @@
 RequestMoneyIntent request {Ten|Amount} dollars from {Brenton|Person}
+RequestMoneyIntent request {One Hundred|Amount} dollars from {Freia|Person}
+RequestMoneyIntent request {Five|Amount} dollars from {James|Person}
+RequestMoneyIntent request {One Thousand|Amount} dollars from {Philip|Person}
+RequestMoneyIntent request {Fifty|Amount} dollars from {Muhammad|Person}
 
 HelpIntent help
 HelpIntent help me

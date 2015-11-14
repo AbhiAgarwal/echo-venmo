@@ -2,6 +2,8 @@
 
 Amazon Echo Skill for Venmo. "Alexa, open venmo" then "Alexa, request ten dollars from James".
 
+Currently only works for requesting money, but it shouldn't be too hard to add sending money as well.
+
 ## Instructions
 
 To run this example skill you need to do two things. The first is to deploy the example code in lambda, and the second is to configure the Alexa skill to use Lambda. These are copied from [here](https://github.com/amzn/alexa-skills-kit-js/blob/master/helloWorld/README.md).
