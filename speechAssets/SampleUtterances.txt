@@ -1,4 +1,4 @@
-RequestMoneyIntent request {10 | Amount} dollars from {brenton | Person}
+RequestMoneyIntent request {Ten|Amount} dollars from {Brenton|Person}
 
 HelpIntent help
 HelpIntent help me

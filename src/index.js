@@ -33,11 +33,11 @@ VenmoHelper.prototype.intentHandlers = {
         var personName = intent.slots.Person.value.toLowerCase();
         var amountValue = intent.slots.Amount.value;
         var cardTitle = "Venmo charge for " + personName;
-        // if (personName) {
-        //     response.tellWithCard(personName, cardTitle, personName);
-        // } else {
+        if (personName) {
+            response.tellWithCard(personName, cardTitle, personName);
+        } else {
         response.ask("I'm sorry, I currently do not know " + personName + ". What else can I help with?", "What else can I help with?");
-        // }
+        }
     },
     HelpIntent: function (intent, session, response) {
         var cardTitle = intent.name;
