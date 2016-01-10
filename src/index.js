@@ -8,6 +8,7 @@
 'use strict';
 
 var AlexaSkill = require('./AlexaSkill');
+var venmoLib = require('./venmo');
 
 var APP_ID = undefined;
 
@@ -29,11 +30,11 @@ VenmoHelper.prototype.eventHandlers.onLaunch = function (launchRequest, session,
 
 VenmoHelper.prototype.intentHandlers = {
     RequestMoneyIntent: function (intent, session, response) {
-        console.log(intent.slots);
         var personName = intent.slots.Person.value.toLowerCase();
         var amountValue = intent.slots.Amount.value;
         var cardTitle = "Venmo charge for " + personName;
         if (personName) {
+            var status = venmoLib.chargePerson(personName, amountValue);
             response.tellWithCard(personName, cardTitle, personName);
         } else {
             response.ask("I'm sorry, I currently do not know " + personName + ". What else can I help with?", "What else can I help with?");
